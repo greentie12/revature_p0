@@ -1,10 +1,12 @@
+@import '../cssLibrary/cssLibrary.css';
+
 :host {
     --primary-color: rgb(197, 50, 17);
     --secondary-color: #2e3830;
     --kakhi: #e6dbc9;
     --dark-color: #000;
     --light-color: #f4f4f4;
-    --hero-opacity: 0.6;
+    --hero-opacity: 0.7;
 }
 
 .hero {
@@ -16,7 +18,7 @@
     align-items: center;
     height: 70vh;
     width: 100%;
-    background: url('resources/bg4.jpg') no-repeat center center/cover;
+    background: url('resources/bg5.jpg') no-repeat center center/cover;
 }
 
 .hero::before {
@@ -49,7 +51,6 @@ h2 {
 }
 
 .stand-out {
-    color: var(--primary-color);
     font-weight: 800;
 }
 

@@ -1,0 +1,43 @@
+@import '../cssLibrary/cssLibrary.css';
+
+:host {
+    --primary-color: rgb(197, 50, 17);
+    --secondary-color: #2e3830;
+    --kakhi: #e6dbc9;
+    --dark-color: #000;
+    --light-color: #f4f4f4;
+    --hero-opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutor {
+    padding: 2rem 0;
+    background-color: var(--kakhi);
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #ccb591;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+    width: 50%;
+}
+
+.tutor img {
+    display: none;
+    height: 70px;
+}
+
+.tutor h3 {
+    text-align: center;
+}
+
+.tutor p {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}

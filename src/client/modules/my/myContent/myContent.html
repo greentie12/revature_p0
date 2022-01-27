@@ -1,0 +1,31 @@
+<template>
+    <section class="course-section">
+        <div class="course-container">
+            <h3>Browse the latest <span class="stand-out">Courses</span></h3>
+            <div
+                class="container slds-grid slds-wrap slds-grid_align-center slds-grid_align-spread"
+            >
+                <template for:each={courses} for:item="course">
+                    <a key={course.name}>
+                        <div class="card">
+                            <p>{course.name}</p>
+                        </div>
+                    </a>
+                </template>
+            </div>
+
+            <template
+                if:true={showCourses}
+                for:each={courses2}
+                for:item="course2"
+            >
+                <a key={course2.name}>
+                    <div class="card">
+                        <p>{course2.name}</p>
+                    </div>
+                </a>
+            </template>
+        </div>
+        <button class="show" onclick={handleChange}>See more courses</button>
+    </section>
+</template>

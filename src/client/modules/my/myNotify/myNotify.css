@@ -12,20 +12,16 @@
     padding: 1.2rem;
 }
 
+.container {
+    max-width: 1110px;
+    margin: auto;
+}
+
 .notify p {
     color: var(--kakhi);
     font-size: 21px;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-.container {
-    max-width: 1110px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    justify-content: space-between;
-    align-items: center;
 }
 
 form {
@@ -36,7 +32,7 @@ form {
 
 .email {
     padding: 0.5rem 1rem;
-    width: 50%;
+    width: 70%;
     margin: 0;
     font-size: 1rem;
     border: none;
@@ -49,7 +45,7 @@ form {
     margin: 0;
     font-size: 1rem;
     border: none;
-    padding: 0.36rem 1rem;
+    padding: 0.5rem 1rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background-color: var(--dark-color);
