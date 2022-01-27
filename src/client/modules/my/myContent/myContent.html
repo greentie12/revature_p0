@@ -2,11 +2,9 @@
     <section class="course-section">
         <div class="course-container">
             <h3>Browse the latest <span class="stand-out">Courses</span></h3>
-            <div
-                class="container slds-grid slds-wrap slds-grid_align-center slds-grid_align-spread"
-            >
+            <div class="container slds-grid slds-wrap slds-grid_align-center">
                 <template for:each={courses} for:item="course">
-                    <a key={course.name}>
+                    <a class="slds-col" key={course.name}>
                         <div class="card">
                             <p>{course.name}</p>
                         </div>

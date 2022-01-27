@@ -55,3 +55,9 @@
 .show:hover {
     background-color: var(--primary-color);
 }
+
+@media screen and (min-width: 990px) {
+    .container {
+        justify-content: space-between;
+    }
+}
