@@ -1,3 +1,6 @@
+@import '../cssLibrary/normalize.css';
+@import '../cssLibrary/cssLibrary.css';
+
 :host {
     --primary-color: #c53211;
     --secondary-color: #2e3830;

@@ -1,3 +1,4 @@
+@import '../cssLibrary/normalize.css';
 @import '../cssLibrary/cssLibrary.css';
 
 :host {
