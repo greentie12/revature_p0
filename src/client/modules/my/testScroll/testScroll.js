@@ -1,11 +1,11 @@
 import { LightningElement } from 'lwc';
 
-export default class MyHero extends LightningElement {
-    handleScroll() {
+export default class testScroll extends LightningElement {
+    handleScrollClick() {
         const topDiv = this.template.querySelector('[data-id="grayDiv"]');
         topDiv.scrollIntoView({
             behavior: 'smooth',
-            block: 'start',
+            block: 'center',
             inline: 'nearest'
         });
     }

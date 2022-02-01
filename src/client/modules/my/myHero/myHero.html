@@ -1,4 +1,19 @@
 <template>
+    <header>
+        <div class="container">
+            <!-- <img class="logo" src="resources/logo.png" alt="" /> -->
+            <h3 class="logo">
+                <span class="stand-out">&#123;</span>Autumn_Coding/
+                <span class="stand-out">&#125;</span>
+            </h3>
+            <nav>
+                <ul>
+                    <li><a onclick={handleScroll}>Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section class="hero">
         <div class="container">
             <h5>Autumn Coding</h5>
@@ -10,4 +25,5 @@
             </p>
         </div>
     </section>
+    <div class="scroll" data-id="grayDiv"></div>
 </template>

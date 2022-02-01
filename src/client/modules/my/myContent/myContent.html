@@ -6,24 +6,34 @@
                 <template for:each={courses} for:item="course">
                     <a class="slds-col" key={course.name}>
                         <div class="card">
-                            <p>{course.name}</p>
+                            <div class="course-head">
+                                <p>{course.level}</p>
+                                <img src={course.img} alt="" />
+                            </div>
+
+                            <p class="course-name">{course.name}</p>
+                        </div>
+                    </a>
+                </template>
+
+                <template
+                    if:true={showCourses}
+                    for:each={courses2}
+                    for:item="course2"
+                >
+                    <a class="slds-col" key={course2.name}>
+                        <div class="card">
+                            <div class="course-head">
+                                <p>{course2.level}</p>
+                                <img src={course2.img} alt="" />
+                            </div>
+
+                            <p class="course-name">{course2.name}</p>
                         </div>
                     </a>
                 </template>
             </div>
-
-            <template
-                if:true={showCourses}
-                for:each={courses2}
-                for:item="course2"
-            >
-                <a key={course2.name}>
-                    <div class="card">
-                        <p>{course2.name}</p>
-                    </div>
-                </a>
-            </template>
         </div>
-        <button class="show" onclick={handleChange}>See more courses</button>
+        <button class="show" onclick={handleChange}>{seeMore}</button>
     </section>
 </template>
