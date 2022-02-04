@@ -1,0 +1,100 @@
+:host {
+    --primary-color: #c53211;
+    --secondary-color: #2e3830;
+    --secondary-color-light: #546157;
+    --kakhi: #e6dbc9;
+    --dark-color: #1b1b1b;
+    --light-color: #f4f4f4;
+    --hero-opacity: 0.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--kakhi);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+h5,
+p,
+a {
+    font-size: 1rem;
+}
+
+.reviews {
+    background: url('resources/bg.png');
+    padding: 2rem 0;
+}
+
+.wy-logo {
+    width: 150px;
+}
+
+.reviews h2,
+.review-p {
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.reviews .card {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: #eee solid 1px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 425px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.statement {
+    margin-bottom: 0.5rem;
+}
+
+.stand-out {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews .card {
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviews .container {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .reviews .card {
+        width: 400px;
+    }
+}

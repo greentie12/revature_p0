@@ -71,7 +71,7 @@ p {
 
 .course-section .container {
     gap: 2rem;
-    /* padding: 0 1rem; */
+    align-items: center;
 }
 
 .course-section h3 {
@@ -95,7 +95,7 @@ p {
 }
 
 .card img {
-    max-width: 75px;
+    max-width: 65px;
 }
 
 .card .course-head {
@@ -134,8 +134,24 @@ p {
     background-color: var(--primary-color);
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 990px) {
     .container {
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        width: 475px;
     }
 }

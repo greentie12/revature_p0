@@ -14,24 +14,34 @@ export default class MyContent extends LightningElement {
         }
     }
 
+    courseInfo(e) {
+        console.log(e.target.textContent);
+        e.target.textContent = 'Description here';
+    }
+
     courses = [
         {
-            name: 'Build your first Web Page with HTML & CSS',
+            id: 1,
+            name: 'Your first Web Page with HTML & CSS',
             level: 'Beginner',
-            img: 'resources/html.png'
+            img: 'resources/html.png',
+            info: 'This is the info section'
         },
         {
+            id: 2,
             name: 'Web Development (HTML, CSS & JS)',
             level: 'Beginner',
             img: 'resources/webdev.png'
         },
         {
-            name: 'Intermediate JavaScirpt',
+            id: 3,
+            name: 'Intermediate JavaScript',
             level: 'Intermediate',
             img: 'resources/js.png'
         },
         {
-            name: 'React - Beginner to Pro',
+            id: 4,
+            name: 'React - Beginner to Advanced',
             level: 'Intermediate - Advanced',
             img: 'resources/react.png'
         }
@@ -39,11 +49,13 @@ export default class MyContent extends LightningElement {
 
     courses2 = [
         {
-            name: 'Learn SQL with MySQL',
+            id: 5,
+            name: 'Learn SQL with PostgreSQL',
             level: 'Beginner',
             img: 'resources/sql.png'
         },
         {
+            id: 6,
             name: 'Understanding UX Design',
             level: 'Beginner - Intermediate',
             img: 'resources/ux.png'

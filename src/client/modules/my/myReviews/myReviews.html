@@ -1,0 +1,28 @@
+<template>
+    <section class="reviews">
+        <h2>Testimonials</h2>
+        <p class="review-p">
+            Check out what some of my students have said on
+            <a
+                href="https://www.wyzant.com/match/tutor/88716614"
+                target="_blank"
+                ><img class="wy-logo" src="resources/wyzant2.png" alt=""
+            /></a>
+        </p>
+
+        <div
+            class="container slds-grid slds-grid_vertical slds-grid_vertical-align-center slds-wrap slds-grid_align-center"
+        >
+            <template for:each={reviews} for:item="review">
+                <div class="card" key={review.headline}>
+                    <h4>{review.headline}</h4>
+                    <p class="statement">{review.review}</p>
+                    <p>
+                        {review.student}
+                        <span class="stand-out">{review.topic}</span>
+                    </p>
+                </div>
+            </template>
+        </div>
+    </section>
+</template>

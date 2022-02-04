@@ -7,7 +7,7 @@
     --hero-opacity: 0.7;
 }
 
-.hero .container {
+.container {
     max-width: 1100px;
     margin: auto;
 }
@@ -94,7 +94,7 @@ p {
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -165,7 +165,7 @@ nav ul li a {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    header .container {
         flex-direction: row;
     }
 }

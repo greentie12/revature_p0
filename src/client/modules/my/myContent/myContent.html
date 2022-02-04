@@ -4,7 +4,7 @@
             <h3>Browse the latest <span class="stand-out">Courses</span></h3>
             <div class="container slds-grid slds-wrap slds-grid_align-center">
                 <template for:each={courses} for:item="course">
-                    <a class="slds-col" key={course.name}>
+                    <a class="slds-col" key={course.id}>
                         <div class="card">
                             <div class="course-head">
                                 <p>{course.level}</p>
@@ -21,7 +21,7 @@
                     for:each={courses2}
                     for:item="course2"
                 >
-                    <a class="slds-col" key={course2.name}>
+                    <a class="slds-col" key={course2.id}>
                         <div class="card">
                             <div class="course-head">
                                 <p>{course2.level}</p>

@@ -9,10 +9,51 @@
                     specific needs. We'll work on real world projects together
                     and dissect the methodologies and concepts taught.
                 </p>
-                <button class="contact">Contact Me</button>
+                <button class="contact" onclick={handleChange}>
+                    {seeMore}
+                </button>
             </div>
-
-            <img src="resources/logo.png" alt="Logo" />
         </div>
+
+        <template if:true={isContact}>
+            <form>
+                <div class="text-fields">
+                    <input
+                        type="text"
+                        class="text-input name-input"
+                        placeholder="Name"
+                        name="name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        class="text-input subject-input"
+                        placeholder="Subject"
+                        name="subject"
+                    />
+                    <input
+                        type="email"
+                        class="text-input email-input"
+                        placeholder="Email"
+                        name="email"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        class="text-input phone-input"
+                        placeholder="Phone"
+                        name="phone"
+                    />
+                    <textarea
+                        name="message"
+                        class="text-input message-input"
+                        required
+                        placeholder="Message..."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </template>
     </section>
 </template>
