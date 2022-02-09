@@ -1,9 +1,11 @@
 import { LightningElement } from 'lwc';
 
 export default class MyContent extends LightningElement {
+    // showCourse defaulted to false
     showCourses = false;
     seeMore = 'Show more courses';
 
+    // function to handle our click event on Show more courses button
     handleChange() {
         if (!this.showCourses) {
             this.showCourses = true;
@@ -14,11 +16,7 @@ export default class MyContent extends LightningElement {
         }
     }
 
-    courseInfo(e) {
-        console.log(e.target.textContent);
-        e.target.textContent = 'Description here';
-    }
-
+    // courses array with information relating
     courses = [
         {
             id: 1,

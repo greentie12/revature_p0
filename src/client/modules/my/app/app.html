@@ -1,15 +1,9 @@
 <template>
-    <!-- <my-my-header></my-my-header> -->
     <my-my-hero></my-my-hero>
-    <template if:false={isContact}>
-        <my-my-notify></my-my-notify>
-        <my-my-content></my-my-content>
-        <my-my-tutor></my-my-tutor>
-        <my-my-info></my-my-info>
-        <my-my-reviews></my-my-reviews>
-    </template>
-    <template if:true={isContact}>
-        <my-my-form></my-my-form>
-    </template>
+    <my-my-notify></my-my-notify>
+    <my-my-content></my-my-content>
+    <my-my-tutor></my-my-tutor>
+    <my-my-info></my-my-info>
+    <my-my-reviews></my-my-reviews>
     <my-my-footer></my-my-footer>
 </template>
